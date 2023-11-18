@@ -111,10 +111,6 @@ namespace DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PhotoURL")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Price")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -135,6 +131,9 @@ namespace DataAccess.Migrations
                     b.Property<string>("Translator")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("isSale")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("isStock")
                         .HasColumnType("bit");

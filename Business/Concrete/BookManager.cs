@@ -26,11 +26,12 @@ namespace Business.Concrete
             {
                 Name = bookDTO.Name,
                 Description = bookDTO.Description,
-                PhotoURL = bookDTO.PhotoURL,
+                //PhotoURL = bookDTO.PhotoURL,
                 Price = bookDTO.Price,
                 SalePrice = bookDTO.SalePrice,
                 isStock = bookDTO.isStock,
                 isTranslate = bookDTO.isTranslate,
+                isSale = bookDTO.isSale,
                 Translator = bookDTO.Translator,
                 BookCover = bookDTO.BookCover,
                 PaperType = bookDTO.PaperType,
@@ -65,19 +66,20 @@ namespace Business.Concrete
             var current = _bookDal.Get(x=>x.Id == id);
             current.Name = bookDTO.Name;
             current.Description = bookDTO.Description;
-            current.PhotoURL = bookDTO.PhotoURL;
+            //current.PhotoURL = bookDTO.PhotoURL;
             current.Price = bookDTO.Price;
             current.SalePrice = bookDTO.SalePrice;
             current.isStock = bookDTO.isStock;
             current.isTranslate = bookDTO.isTranslate;
+            current.isSale = bookDTO.isSale;
             current.Translator = bookDTO.Translator;
             current.BookCover = bookDTO.BookCover;
             current.PaperType = bookDTO.PaperType;
             current.Size = bookDTO.Size;
-            current.AuthorId = bookDTO.AuthorId;
-            current.GenreId = bookDTO.GenreId;
-            current.PublisherId = bookDTO.PublisherId;
-            current.LanguageId = bookDTO.LanguageId;
+            //current.AuthorId = bookDTO.AuthorId;
+            //current.GenreId = bookDTO.GenreId;
+            //current.PublisherId = bookDTO.PublisherId;
+            //current.LanguageId = bookDTO.LanguageId;
             current.Quantity = bookDTO.Quantity;
             _bookDal.Delete(current);
         }
@@ -87,19 +89,20 @@ namespace Business.Concrete
             var current = _bookDal.Get(x => x.Id == id);
             current.Name = bookDTO.Name;
             current.Description = bookDTO.Description;
-            current.PhotoURL = bookDTO.PhotoURL;
+            //current.PhotoURL = bookDTO.PhotoURL;
             current.Price = bookDTO.Price;
             current.SalePrice = bookDTO.SalePrice;
             current.isStock = bookDTO.isStock;
             current.isTranslate = bookDTO.isTranslate;
+            current.isSale = bookDTO.isSale;
             current.Translator = bookDTO.Translator;
             current.BookCover = bookDTO.BookCover;
             current.PaperType = bookDTO.PaperType;
             current.Size = bookDTO.Size;
-            current.AuthorId = bookDTO.AuthorId;
-            current.GenreId = bookDTO.GenreId;
-            current.PublisherId = bookDTO.PublisherId;
-            current.LanguageId = bookDTO.LanguageId;
+            //current.AuthorId = bookDTO.AuthorId;
+            //current.GenreId = bookDTO.GenreId;
+            //current.PublisherId = bookDTO.PublisherId;
+            //current.LanguageId = bookDTO.LanguageId;
             current.Quantity = bookDTO.Quantity;
             _bookDal.Update(current);
         }

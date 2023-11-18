@@ -69,6 +69,8 @@ builder.Services.AddScoped<ISliderDal, SliderDal>();
 builder.Services.AddScoped<ISliderManager, SliderManager>();
 builder.Services.AddScoped<IAuthDal, AuthDal>();
 builder.Services.AddScoped<IAuthManager, AuthManager>();
+builder.Services.AddScoped<IOrderDal, OrderDal>();
+builder.Services.AddScoped<IOrderManager, OrderManager>();
 
 builder.Services.AddScoped<HasingHandler>();
 builder.Services.AddScoped<TokenGenerator>();

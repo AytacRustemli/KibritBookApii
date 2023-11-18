@@ -9,7 +9,7 @@ namespace Entities.DTOs
     public class BookDTO
     {
         public int Id { get; set; }
-        public string PhotoURL { get; set; }
+        //public string PhotoURL { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Price { get; set; }
@@ -17,6 +17,7 @@ namespace Entities.DTOs
         public int Quantity { get; set; }
         public bool isStock { get; set; }
         public bool isTranslate { get; set; }
+        public bool isSale { get; set; }
         public int ReviewCount { get; set; }
         public decimal Rating { get; set; }
         public string Translator { get; set; }
